@@ -58,7 +58,7 @@
          position:sticky;
          top: 30%;
          background-color: #616060;
-         width: 240px;
+         width: 235px;
          height: fit-content;
          padding: 5mm;
         }
@@ -95,16 +95,21 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1032px) {
    .sidebar {
       position: static;
       display: flex;
       flex-direction: column;
       width: 100vw;
    }
-
    .abstract-list{
-  
       justify-items: center;
    }
+}
+
+@media only screen and (max-width: 600px) {
+.page{
+   margin: 10px;
+   padding: 15px;
+}
 }
