@@ -1,0 +1,109 @@
+     * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+        }
+        
+        .page {
+            flex-basis: 210mm;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 10mm 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .title {
+         margin: 20px 0px;
+         text-align: center;
+         font-size: 12pt;
+        }
+
+        .authors {
+         list-style: none;
+         display: flex;
+         flex-flow: row;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 5px;
+         font-size: 14px;
+         color: rgb(33, 89, 172);
+        }
+
+        .afiliation {
+         margin: 20px 0px;
+         font-size: 12px;
+         font-style: italic;
+         list-style-position: inside;
+        }
+
+        .body-section {
+         margin: 10px 0px;
+         text-align: justify;
+        }
+
+
+        .sidebar {
+         position:sticky;
+         top: 30%;
+         background-color: #616060;
+         width: fit-content;
+         height: fit-content;
+         padding: 5mm;
+        }
+
+
+        .abstract-list {
+         list-style-position: inside;
+         line-height: 25px;
+         color: white;
+         cursor: pointer;
+        }
+
+        .abstract-title {
+         font-size: 12pt;
+         font-weight: 900;
+         margin-block: 20px;
+        }
+
+        a {
+         text-decoration: none;
+         color: white;
+        }
+
+
+.status {
+   margin: 15px 0px;
+}
+
+.status-link {
+   color: rgb(33, 89, 172);
+   text-decoration: underline;
+   font-style: italic;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1023px) {
+   .sidebar {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+   }
+
+   .abstract-list{
+  
+      justify-items: center;
+   }
+}
